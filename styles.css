@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+
+*{
+  
+}
+body {
+    background-color: #121725;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 300;
+    justify-content: center;
+
+
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.logo {
+    padding: 40px;
+    width: 888px;
+    height: 640px;
+    left: 552px;
+    top: 130px;
+}
+
+/* Background */
+.mainimage img{
+    position: absolute;
+    width: 888px;
+    height: 640px;
+    left: 552px;
+    top: 80px;
+}
+.bg img {
+    position: absolute;
+    right: 0%;
+    bottom: 10px;
+
+}
+/* End Background */
+
+/* Content card */
+#container {
+    background-color: #121725;
+    position: absolute;
+    width: 723px;
+    height: 509px;
+    left: 165px;
+    top: 212px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+h1{
+    font-family: 'Chivo', sans-serif;
+    font-weight: 300;
+    color: #54E6AF;
+    font-size: 52px;
+    text-transform: uppercase;
+    line-height: 62px;
+}
+span {
+    color: white;
+}
+p {
+    color: white;
+    max-width: 445px;
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 25px;
+}
+.container {
+    display: inline;
+}
+
+/* Email Form */
+form {
+    border: none;
+    display: block;
+    
+}
+#email {
+    padding-left: 20px;
+    padding-right: 100px;
+    border-radius: 50px;
+}
+#email:valid {
+    background-color: #2C344B;
+    color: white;
+  }
+
+
+input {
+    background-color: #2C344B;
+    border: none;
+    padding: 10px;
+    position: absolute;
+
+    width: 277.5px;
+    height: 34px;
+    left: 30px;
+    
+}
+
+input::placeholder {
+    color: white;
+    font-family: 'Chivo', sans-serif;
+    opacity: 0.5;
+
+}
+input:focus::placeholder {
+    color: transparent;
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+/* Solves the issue of white background when email is autofilled */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px #2C344B inset !important;
+}
+
+/* Solves the issue of white background when email is autofilled */
+
+
+/* Solves the issue of black text when email is autofilled */
+
+input:-webkit-autofill
+{
+ -webkit-text-fill-color: white !important;
+}
+
+/* Solves the issue of black text when email is autofilled */
+
+
+button {
+    position: absolute;
+    left: 36.2%;
+    bottom: 27.2%;
+
+    font-family: 'Chivo', sans-serif;
+    font-weight: bold;
+    width: 162px;
+    height: 46px;
+    border-radius: 30px;
+    border: none;
+    background-color: #54E6AF;
+    color: #121725;
+}
+button:hover {
+    background-color: #B3FFE2;
+    cursor: pointer;
+}
+
+/* End Email Form */
+
+.boxinfo {
+    padding-left: 40px;
+}
+/* End Content card */
+
+
+/* Podcasts */
+.socials {
+    display: inline;
+    position: absolute;
+    bottom: 0;
+    padding-left: 5px;
+}
+.socials img {
+    padding: 0 20px;
+    padding-bottom: 16px;
+}
+/* End Podcasts */
