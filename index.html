@@ -29,11 +29,10 @@
         
         <div class="container">
             
-            <form id="form" onsubmit="return checkforblank()">
-                <input id="email" type="email" name="email" placeholder="Email address" 
-                  />
-               
-                <button type="submit" form="email" value="submit">Request Access</button>
+            <form id="form" ">
+                <input id="email" type="email" name="email" placeholder="Email address" oninvalid="setCustomValidity('Oops! Please add your email.')" />
+                <p id="error"></p> 
+                <button id= "button" type="submit" form="email" value="submit" onclick="errorMessage()"> Request Access </button>
             </form>
               
            

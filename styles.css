@@ -114,8 +114,17 @@ input:focus::placeholder {
     color: transparent;
 }
 
-input:invalid {
-    box-shadow: 0 0 5px 1px red;
+#error {
+   color: rgb(250, 77, 77);
+   position: absolute;
+   font-family: 'Chivo', sans-serif;
+   font-weight: 300;
+   font-size: 14px;
+   
+    height: 100px;
+    left: 45px;
+    top: 70%;
+    padding-top: 5px;
 }
 
 /* Solves the issue of white background when email is autofilled */
