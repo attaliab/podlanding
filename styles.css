@@ -114,6 +114,8 @@ input:focus::placeholder {
     color: transparent;
 }
 
+//styles error message
+
 #error {
    color: rgb(250, 77, 77);
    position: absolute;
