@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
 
-*{
+
   
-}
+
 body {
     background-color: #121725;
     font-family: 'Chivo', sans-serif;
     font-weight: 300;
     justify-content: center;
 
-
     position:fixed;
     top:0;
     bottom:0;
     left:0;
     right:0;
+}
+#bgmo {
+    opacity: 0%;
+}
+#tablet{
+    opacity: 0%;
 }
 .logo {
     padding: 40px;
@@ -33,10 +38,10 @@ body {
     left: 552px;
     top: 80px;
 }
-.bg img {
-    position: absolute;
-    right: 0%;
-    bottom: 10px;
+.dots img {
+    position: relative;
+    left: 75%;
+    bottom: 40px;
 
 }
 /* End Background */
@@ -114,7 +119,7 @@ input:focus::placeholder {
     color: transparent;
 }
 
-//styles error message
+
 
 #error {
    color: rgb(250, 77, 77);
@@ -190,3 +195,160 @@ button:hover {
     padding-bottom: 16px;
 }
 /* End Podcasts */
+
+
+/*-------------------------------------*/
+
+
+/* Mobile Screen */
+
+@media all
+  and (max-device-width: 375px){
+    
+    p {
+        text-align: center;
+        font-family: 'chivo', sans-serif;
+        font-weight: 100;
+        justify-content: center;
+        position: absolute;
+        width: 327px;
+        height: 100px;
+        
+    
+        top: 110px;
+        color: #C2CBE5;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    h1{
+        font-family: 'Chivo', sans-serif;
+        font-weight: 300;
+        color: #54E6AF;
+        text-align: center;
+        font-size: 26px;
+        text-transform: uppercase;
+        line-height: 38px;
+        padding: 10px;
+
+        width: 327px;
+        height: 76px;
+        /*left: 0px;*/
+        top: 175px;
+    }
+    #container {
+        background-color: transparent;
+        position: absolute;
+        justify-content: center;
+        
+        width: 200px;
+        height: 509px;
+        left: -20px;
+        top: 110px;
+        filter: none;
+        
+    }
+    /* Podcasts */
+    .socials {
+        display: flex;
+        position: relative;
+        top: 27%;
+        left: 40px;
+    }
+    .socials img {
+        padding: 12px;
+        width: 50px;
+        height: fit-content;
+    }
+    .logo {
+        position: absolute;
+        justify-content: right;
+        height: 56px;
+        width: 134.8px;
+        left: 120px;
+        top: 25px;
+        padding: 0;
+        z-index: 1;
+    }
+    input {
+        background-color: #2C344B;
+        border: none;
+        padding: 10px;
+        position: absolute;
+        justify-content: center;
+        width: 200px;
+        height: 27px;
+        left: 40px;
+        bottom: 115px;
+    }
+    button {
+        position: absolute;
+        left: 40px;
+        bottom: 50px;
+        width: 316px;
+    }
+    .dots img {
+        opacity: 0%;
+    }
+    
+    #overlay {
+            position: fixed; /* Sit on top of the page content */
+            width: 100%; /* Full width (cover the whole page) */
+            height: 100%;
+            background-color: #121725;
+            opacity: 95%;
+        } 
+    #bgmo {
+        background-image: url("image-host.jpg");
+        opacity: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: 0; 
+    }
+    #error {
+        color: rgb(250, 77, 77);
+        position: absolute;
+        font-family: 'Chivo', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        
+         height: 100px;
+         left: 1px;
+         top: 73%;
+         padding-top: 5px;
+     }
+ 
+}
+
+/* --------------------------------- */
+
+/* Tablet Screen */
+
+@media all
+  and (max-device-width: 768px) {
+    #container {
+        background-color: #121725;
+        position: absolute;
+        width: 723px;
+        height: 509px;
+        left: 0px;
+        top: 212px;
+    
+        filter: none;
+    }
+  
+    #tablet {
+        opacity: 100%;
+        position: absolute;
+        bottom: 244px;
+        left: 300px;
+  }
+    .dots img {
+        left: 30px;
+        top: 195px;
+
+    }
+    #bgmo {
+        opacity: 0%;
+    }
+
+}

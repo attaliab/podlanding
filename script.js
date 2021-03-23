@@ -9,4 +9,3 @@ function errorMessage() {
                   .innerHTML = "Oops! Please add your email."; 
     } 
 } 
-
