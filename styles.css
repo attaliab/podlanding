@@ -204,7 +204,7 @@ button:hover {
 /* Mobile Screen */
 
 @media all
-  and (max-device-width: 375px){
+  and (max-device-width: 480px){
     
     p {
         text-align: center;
