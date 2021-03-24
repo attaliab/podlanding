@@ -39,11 +39,12 @@ body {
     top: 80px;
 }
 .dots img {
-    position: relative;
+    position: absolute;
     left: 75%;
-    bottom: 40px;
+    top: 90%;
 
 }
+
 /* End Background */
 
 /* Content card */
