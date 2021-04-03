@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
 
 
-  
+
 
 body {
     background-color: #121725;
@@ -16,10 +16,10 @@ body {
     left:0;
     right:0;
 }
-#bgmo {
+.bgmo {
     opacity: 0%;
 }
-#tablet{
+.tablet {
     opacity: 0%;
 }
 .logo {
@@ -188,7 +188,7 @@ button:hover {
 .socials {
     display: inline;
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     padding-left: 5px;
 }
 .socials img {
@@ -198,13 +198,56 @@ button:hover {
 /* End Podcasts */
 
 
+
+
+
+/* --------------------------------- */
+
+/* Tablet Screen */
+
+@media screen
+  and (max-device-width: 768px) {
+    #container {
+        background-color: #121725;
+        position: absolute;
+        width: 723px;
+        height: 509px;
+        left: 0px;
+        top: 212px;
+    
+        filter: none;
+    }
+  
+    .tablet {
+        opacity: 100%;
+        position: absolute;
+        bottom: 244px;
+        left: 300px;
+  }
+    .dots{
+        left: 30px;
+        top: 195px;
+    }
+    .bgmo img{
+        opacity: 100%;
+    }
+
+
+
+
+
+
 /*-------------------------------------*/
 
 
 /* Mobile Screen */
 
-@media all
+@media screen
   and (max-device-width: 480px){
+    body {
+        background-color: #121725;
+      
+    }
     
     p {
         text-align: center;
@@ -214,8 +257,6 @@ button:hover {
         position: absolute;
         width: 327px;
         height: 100px;
-        
-    
         top: 110px;
         color: #C2CBE5;
         font-size: 15px;
@@ -241,12 +282,18 @@ button:hover {
         position: absolute;
         justify-content: center;
         
+  
         width: 200px;
         height: 509px;
-        left: -20px;
-        top: 110px;
-        filter: none;
+        bottom: 110px;
+       
         
+    }
+    .bgcont { 
+        
+    }
+    .tablet img{
+        opacity: 0%;
     }
     /* Podcasts */
     .socials {
@@ -287,24 +334,28 @@ button:hover {
         bottom: 50px;
         width: 316px;
     }
-    .dots img {
+    .dots {
         opacity: 0%;
     }
-    
-    #overlay {
-            position: fixed; /* Sit on top of the page content */
-            width: 100%; /* Full width (cover the whole page) */
+    .bgmo {
+        opacity: 100%;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        height: 100%;
+    }
+
+  #overlay {
+            position: absolute;
+            width: 100%;
             height: 100%;
             background-color: #121725;
-            opacity: 95%;
+            opacity: 90%;
+            z-index: 0;
         } 
-    #bgmo {
-        background-image: url("image-host.jpg");
-        opacity: 100%;
-        width: 100%;
-        height: 100%;
-        z-index: 0; 
-    }
+   
+
+    
     #error {
         color: rgb(250, 77, 77);
         position: absolute;
@@ -320,36 +371,5 @@ button:hover {
  
 }
 
-/* --------------------------------- */
-
-/* Tablet Screen */
-
-@media all
-  and (max-device-width: 768px) {
-    #container {
-        background-color: #121725;
-        position: absolute;
-        width: 723px;
-        height: 509px;
-        left: 0px;
-        top: 212px;
-    
-        filter: none;
-    }
-  
-    #tablet {
-        opacity: 100%;
-        position: absolute;
-        bottom: 244px;
-        left: 300px;
-  }
-    .dots img {
-        left: 30px;
-        top: 195px;
-
-    }
-    #bgmo {
-        opacity: 0%;
-    }
 
 }
