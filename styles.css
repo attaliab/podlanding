@@ -297,7 +297,7 @@ button:hover {
     .socials {
         display: flex;
         position: relative;
-        top: 27%;
+        top: 130px;
         left: 40px;
     }
     .socials img {
