@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Webpage</title>
    
@@ -11,23 +11,23 @@
 <body>
   
     <div class="logo">
-        <img src="desktop/logo.svg">
+        <img src="desktop/logo.svg" alt="pod logo">
     </div>
    
     <div class="mainimage">
-        <img src="desktop/image-host.jpg">
+        <img src="desktop/image-host.jpg" alt="man recording in studio">
     </div>
     <div id="overlay"></div>
     <div class="bgmo">
-        <img src="mobile/image-host.jpg">
+        <img src="mobile/image-host.jpg" alt="man recording in studio">
     </div>
 
     <div class="tablet">
-        <img src="tablet/image-host.jpg">
+        <img src="tablet/image-host.jpg" alt="man recording in studio">
     </div>
 
     <div class="dots">
-        <img src="desktop/bg-pattern-dots.svg">
+        <img src="desktop/bg-pattern-dots.svg" alt="dots in a block formation">
     </div>
     
   
@@ -44,7 +44,7 @@
         <div class="container">
             
             <form id="form">
-                <input id="email" type="email" name="email" placeholder="Email address" oninvalid="setCustomValidity('Oops! Please add your email.')" />
+                <input id="email" type="email" name="email" placeholder="Email address" aria-labelledby="form" oninvalid="setCustomValidity('Oops! Please add your email.')" />
                 <p id="error"></p> 
                 <button id= "button" type="submit" form="email" value="submit" onclick="errorMessage()"> Request Access </button>
             </form>
